@@ -1,7 +1,7 @@
 // (function(){
 
 	window.addEventListener('DOMContentLoaded', function(){
-		var firstTable = document.querySelector('section.schedule:first-child table');
+		var firstTable = document.querySelector('section.schedule table');
 		initScheduleSticky(firstTable);
 		initSchedulePopup(firstTable);
 	});
@@ -72,7 +72,7 @@
 		[].forEach.call($table.parentNode.querySelectorAll('.cancel'), function($cancelButton){
 			$cancelButton.addEventListener('click', function(){
 				document.querySelector('.popup.opened').classList.remove('opened');
-				[].forEach.call(document.querySelectorAll('.selected'), function($element){
+				[].forEach.call(document.querySelectorAll('.schedule table .selected'), function($element){
 					$element.classList.remove('selected');
 				});
 
