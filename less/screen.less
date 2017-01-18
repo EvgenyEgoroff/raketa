@@ -61,14 +61,17 @@ h5 {font-size: 1.4em}
 
 .l-header .aside { float: right; }
 .l-header .aside .userlogin { display: block; width: 50px; height: 50px; margin: 0; position: relative; font-weight: 600; }
-.l-header .aside .userlogin:hover:before,
-.l-header .aside .userlogin span { display: block; color: #fff; font-size: 1.8em; position: absolute; right: 50px; height: 50px; line-height: 50px }
+// .l-header .aside .userlogin:hover:before,
+.l-header .aside .userlogin span { display: block; font-size: 1.8em; position: absolute; right: 50px; height: 50px; line-height: 50px; width: 150px; overflow: hidden; text-overflow: ellipsis; text-align: right;}
+.l-header .aside .userlogin:hover span { color: #fb2d46; }
 
 .l-header .aside .userlogin .svg { position: absolute; top: 0; bottom: 0; right: 15px; margin: auto; width:  19px; height: 19px; }
-.l-header .aside .userlogin .svg * { fill: #fff; -webkit-transition: all 0.1s; -o-transition: all 0.1s; transition: all 0.1s; }
-.l-header .aside .userlogin:hover span { display: none }
-.l-header .aside .userlogin:hover:before { color: #fb2d46; content: "Выйти";  }
-.l-header .aside .userlogin:hover .svg * { fill: #fb2d46; }
+.l-header .aside .userlogin span,
+.l-header .aside .userlogin .svg * { color: #fff; fill: #fff; -webkit-transition: all 0.1s; -o-transition: all 0.1s; transition: all 0.1s; }
+// .l-header .aside .userlogin:hover span { display: none }
+// .l-header .aside .userlogin:hover:before { color: #fb2d46; content: "Выйти";  }
+.l-header .aside .userlogin:hover span,
+.l-header .aside .userlogin:hover .svg * { color: #fb2d46; fill: #fb2d46; }
 
 
 .l-footer { background: #2c2c39; font-weight: 600; }
@@ -81,7 +84,7 @@ h5 {font-size: 1.4em}
 .main { max-width: 1380px; margin:0 auto; padding: 150px 50px 100px; }
 .main section > header {padding: 0px 0 50px;}
 .main section > header:after { content: ""; display: table; clear: both; }
-.main section > header > .select-style {margin-top: 6px; }
+.main section > header > .select-style {margin-top: 6px; float: right}
 
 
 
@@ -175,13 +178,16 @@ h5 {font-size: 1.4em}
 /* Форма редактирования тренировки / сессии / услуги */
 /* ---------------------------------------------------------------------------- */
 
-.session-form {}
-.session-form .group {margin-bottom: 20px}
-.session-form .group h5 {margin-bottom: 0}
-.session-form .group input[type=text] {margin: .9em 0; width: 450px}
-.session-form .group input[type=date] {margin: .9em 0}
-.session-form .group label>input[type=checkbox]+span:before {margin-left: 0;}
-.session-form .group label>input[type=checkbox]+span {margin-right: 20px}
+.edit-form {}
+.edit-form .group {margin-bottom: 20px}
+.edit-form .group h5 {margin-bottom: 0}
+.edit-form .group input[type=text] {margin: 12px 0; width: 450px}
+.edit-form .group input[type=date] {margin: 12px 0}
+.edit-form .group .select-style {margin: 12px 0}
+.edit-form .group label>input[type=radio]+span:before,
+.edit-form .group label>input[type=checkbox]+span:before {margin-left: 0;}
+.edit-form .group label>input[type=radio]+span,
+.edit-form .group label>input[type=checkbox]+span {margin-right: 20px}
 
 
 
@@ -259,13 +265,24 @@ label.right > input[type="checkbox"]+span:before {content: none}
 
 
 
+label > input[type="radio"] {display: none}
+label > input[type="radio"]+span:before,
+label > input[type="radio"]+span:after {content: ""; display: inline-block; height: 1.5em; width: 1.5em; background: #fff; margin: 0 .5em -.4em; border: 1px solid #ccc; border-radius: 2em}
+label > input[type="radio"]:checked+span:before,
+label > input[type="radio"]:checked+span:after {background-image: url(radio.png); background-size: 80%; background-position: 50%; background-repeat: no-repeat;}
+
+label > input[type="radio"]+span:after {content: none}
+label.right > input[type="radio"]+span:after {content: ""; margin-right: 0}
+label.right > input[type="radio"]+span:before {content: none}
+
+
 
 
 
 
 
 .select-style {
-	float:right;
+	display: inline-block;
     padding: 10px 0;
     margin: 0;
     border: 1px solid #ccc;
