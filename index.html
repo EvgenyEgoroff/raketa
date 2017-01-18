@@ -47,6 +47,20 @@
 
 		<h2>Администратор / планирование сессий</h2>
 
+		<div class="notifications">
+			<div id="notification-123" class="notification client" style="background: #ECFF26">
+				<div class="wrap" style="overflow: hidden;">
+					<h4>Новый клиент</h4>
+
+					<div class="avatar" style="background-image: url(css/default_male300x300)"></div>
+					<div class="name">Большаков Тихон Дмитриевич</div>
+					<div class="phone">+7 (926) 814-53-71</div>
+
+					<button onclick="var el = document.querySelector('#notification-123'); el.parentNode.removeChild(el);">Я уже связался</button>
+				</div>
+			</div>
+		</div>
+
 		<header>
 			<div class="select-style">
 			<select>
@@ -81,6 +95,12 @@
 							<h3>Новая сессия / Редактирование сессии</h3>
 						</header>
 						<div class="wrap">
+
+							<div class="tabs">
+								<a class="selected" href="#">30 минут</a>
+								<a href="#">55 минут</a>
+								<a href="#">55 минут (группа)</a>
+							</div>
 
 							<div class="group">
 								<h5>Название</h5>
