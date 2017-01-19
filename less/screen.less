@@ -11,20 +11,24 @@ html, body {
 	width: 100%;
 }
 
-body { font: 62.5%/1.3 'Gilroy', serif, sans-serif; cursor: default; overflow-x: hidden;}
+body { font: 62.5%/1.3 'Gilroy', serif, sans-serif; cursor: default; overflow-x: hidden; font-weight: 600}
 
 * { -webkit-text-size-adjust: none; box-sizing: border-box; }
 
 a { color: #000; text-decoration: none; -webkit-transition: all 0.1s; -o-transition: all 0.1s; transition: all 0.1s; }
 a:hover { }
 
+strong {font-weight: 800}
+
+textarea,
 input { font-size: 1.6em; padding: 15px; border-radius: 3px; border: 1px solid #ccc; }
 button { background: #fb2d46; color: #fff; border: 0; font-size: 1.6em; line-height: 3.5em; padding: 0 3em;}
 button:hover { opacity: .8}
 
-h1, h2, h3, h4, h5 { font-weight: 600; margin-bottom: 2em }
-h1 {font-size: 3em}
-h2 {font-size: 2.6em}
+h1, h2, h3, h4, h5 { font-weight: 600; margin-bottom: 2em; }
+h1 {font-size: 3em; font-weight: 800}
+h2 {font-size: 2.6em; font-weight: 800}
+h2.large {font-size: 3.6em; font-weight: 600; margin-bottom: 1em; }
 h3 {font-size: 2.2em}
 h4 {font-size: 1.8em}
 h5 {font-size: 1.4em}
@@ -81,7 +85,7 @@ h5 {font-size: 1.4em}
 .l-footer .logo .svg { width: 250px; display: block; margin: 0 auto; }
 .l-footer .logo .svg * { fill: rgba(255,255,255,0.3); }
 
-.main { max-width: 1380px; margin:0 auto; padding: 150px 50px 100px; }
+.main { max-width: 1380px; margin:0 auto; padding: 120px 50px 100px; }
 .main section > header {padding: 0px 0 30px;}
 .main section > header:after { content: ""; display: table; clear: both; }
 .main section > header > .select-style {margin-top: 6px; float: right}
@@ -173,6 +177,51 @@ h5 {font-size: 1.4em}
 
 
 
+/* Страница пользователя */
+/* ---------------------------------------------------------------------------- */
+
+.user-page {}
+.user-page .wrap {padding-bottom: 60px}
+.user-page header { margin-bottom: 30px }
+.user-page header h1 { margin: 0 }
+.user-page header:after { content: ""; display: table; clear: both; }
+.user-page header .balance { overflow: hidden; padding-top: 1em; position: relative; margin-left: 30px; }
+.user-page header .balance-value { font-size: 3em; font-weight: 600; }
+.user-page header .balance-value .title { font-size:.45em; display: block; text-align: right; }
+.user-page header .balance-value .value { white-space: nowrap; }
+.user-page header button.refill { margin-left: 30px }
+
+.user-page-info { background: #fff; display: table; width: 100%; }
+.user-page-info .registration-data {display: table-cell; width: 50%; padding: 60px; }
+.user-page-info .registration-data .avatar { background-color: #fff; display: block; height: 100px; width: 100px; border-radius: 50px; border: 1px solid rgba(0,0,0,.3); overflow: hidden; background-size: cover; margin-bottom: 50px }
+.user-page-info .registration-data .club,
+.user-page-info .registration-data .phone {float: left; width: 50%; margin-bottom: 30px}
+.user-page-info .registration-data .email {clear: both; margin-bottom: 30px; }
+.user-page-info .registration-data h5 { color: #d6d6d9; margin-bottom: .5em; font-size: 1.8em }
+.user-page-info .registration-data .value { font-size: 1.8em }
+
+.user-page-info .social-data {background: #ECFF26; display: table-cell; width: 50%; padding: 60px; vertical-align: top; }
+// .user-page-info .social-data h2.large {margin-bottom: 1em}
+.user-page-info .social-data .socials {margin-right: 20px; margin-bottom: 30px; }
+.user-page-info .social-data .socials svg {margin-right: 25px}
+.user-page-info .social-data .socials svg:hover {opacity: .8; cursor: pointer;}
+.user-page-info .social-data .socials svg * {fill: #FB2D46}
+
+.user-page-info .social-data .input {display:block; position: relative; margin-bottom: 15px}
+.user-page-info .social-data .input svg {position: absolute; margin-top: 15px; margin-left: 10px; width: 51px; height: 21px}
+.user-page-info .social-data .input button {padding: 0 1.8em; line-height: 3.2em; position: absolute; right: 0}
+.user-page-info .social-data .input input {padding-left: 85px; padding-right: 80px; width: 100%}
+
+.user-page-info .social-data p {font-size: 1.8em; margin-bottom: 1em}
+
+.user-page .logout {font-size: 2.2em; width: 100%; margin-bottom: 60px}
+
+.user-page-about {}
+.user-page-about textarea {height: 300px; width: 100%}
+
+.user-page-services {}
+.user-page-services .wrap {background: #fff; padding: 60px}
+
 
 
 /* Форма редактирования тренировки / сессии / услуги */
@@ -185,6 +234,7 @@ h5 {font-size: 1.4em}
 .edit-form .group input[type=text] {margin: 12px 0; width: 450px}
 .edit-form .group input[type=date] {margin: 12px 0}
 .edit-form .group .select-style {margin: 12px 0}
+.edit-form .group label {font-size: 1.6em; line-height: 3.5em}
 .edit-form .group label>input[type=radio]+span:before,
 .edit-form .group label>input[type=checkbox]+span:before {margin-left: 0;}
 .edit-form .group label>input[type=radio]+span,
@@ -260,7 +310,6 @@ h5 {font-size: 1.4em}
 
 
 
-label {font-size: 1.6em; line-height: 3.5em}
 label > span {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Chrome/Safari/Opera */
