@@ -160,33 +160,29 @@
 						<thead>
 							<tr>
 								<td>Название тренировки</td>
-								<td>Стоимость</td>
 								<td>Длительность и тип тренировки</td>
 								<td>Формат тренировки</td>
-								<td>Клуб</td>
+								<td>Клуб и стоимость</td>
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
+							<tr class="selected">
 								<td>Глупости с блинами</td>
-								<td>1 000 ₽</td>
 								<td>55 минут (группа)</td>
 								<td>Хочу быть умным</td>
-								<td>ТРЦ MARi</td>
+								<td>ТРЦ MARi — 1 000 ₽<br/>ТРЦ Columbus — 1 000 ₽</td>
 							</tr>
 							<tr>
 								<td>Глупости с блинами</td>
-								<td>1 000 ₽</td>
 								<td>55 минут (группа)</td>
 								<td>Хочу быть умным</td>
-								<td>ТРЦ MARi</td>
+								<td>ТРЦ Columbus — 1 000 ₽</td>
 							</tr>
 							<tr>
 								<td>Глупости с блинами</td>
-								<td>1 000 ₽</td>
 								<td>55 минут (группа)</td>
 								<td>Хочу быть умным</td>
-								<td>ТРЦ MARi</td>
+								<td>ТРЦ MARi — 1 000 ₽</td>
 							</tr>
 						</tbody>
 					</table>
@@ -199,14 +195,13 @@
 								<h5>Название услуги</h5>
 								<input type="text" />
 							</div>
-
 							<div class="group">
-								<h5>Стоимость услуги</h5>
+								<h5>Формат тренировки</h5>
 								<div class="select-style">
 									<select>
-										<option>500</option>
-										<option>1 000</option>
-										<option>1 500</option>
+										<option>Хочу быть умным</option>
+										<option>Хочу быть сильным</option>
+										<option>Хочу быть красивым</option>
 									</select>
 								</div>
 							</div>
@@ -219,22 +214,32 @@
 						</div>
 						<div class="wrap right">
 							<div class="group">
-								<h5>Формат тренировки</h5>
-								<div class="select-style">
-									<select>
-										<option>Хочу быть умным</option>
-										<option>Хочу быть сильным</option>
-										<option>Хочу быть красивым</option>
-									</select>
+								<h5>Клуб и стоимость</h5>
+								<div class="club">
+									<label>
+										<input type="checkbox" onclick="var select = document.querySelector('#test-price-1'); if (this.checked) {select.removeAttribute('disabled')} else {select.setAttribute('disabled', 'disabled')}">
+										<span>ТРЦ MARi</span>
+									</label>
+									<div class="select-style">
+										<select disabled="disabled" id="test-price-1">
+											<option>500</option>
+											<option>1 000</option>
+											<option>1 500</option>
+										</select>
+									</div>
 								</div>
-							</div>
-							<div class="group">
-								<h5>Клуб</h5>
-								<div class="select-style">
-									<select>
-										<option>ТРЦ MARi</option>
-										<option>ТРК Columbus</option>
-									</select>
+								<div class="club">
+									<label>
+										<input type="checkbox" onclick="var select = document.querySelector('#test-price-2'); if (this.checked) {select.removeAttribute('disabled')} else {select.setAttribute('disabled', 'disabled')}">
+										<span>ТРК Columbus</span>
+									</label>
+									<div class="select-style">
+										<select disabled="disabled" id="test-price-2">
+											<option>500</option>
+											<option>1 000</option>
+											<option>1 500</option>
+										</select>
+									</div>
 								</div>
 							</div>
 						</div>
