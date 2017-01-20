@@ -152,6 +152,100 @@
 					<textarea></textarea>
 				</div>
 			</section>
+
+			<section class="user-page-services">
+				<h2>Услуги</h2>
+				<div class="wrap">
+					<table>
+						<thead>
+							<tr>
+								<td>Название тренировки</td>
+								<td>Стоимость</td>
+								<td>Длительность и тип тренировки</td>
+								<td>Формат тренировки</td>
+								<td>Клуб</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Глупости с блинами</td>
+								<td>1 000 ₽</td>
+								<td>55 минут (группа)</td>
+								<td>Хочу быть умным</td>
+								<td>ТРЦ MARi</td>
+							</tr>
+							<tr>
+								<td>Глупости с блинами</td>
+								<td>1 000 ₽</td>
+								<td>55 минут (группа)</td>
+								<td>Хочу быть умным</td>
+								<td>ТРЦ MARi</td>
+							</tr>
+							<tr>
+								<td>Глупости с блинами</td>
+								<td>1 000 ₽</td>
+								<td>55 минут (группа)</td>
+								<td>Хочу быть умным</td>
+								<td>ТРЦ MARi</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="buttons">
+						<button id="test-create-button" onclick="document.querySelector('#test-edit-form').style.display = ''; this.style.display = 'none'">Создать услугу</button>
+					</div>
+					<section class="edit-form" id="test-edit-form" style="display: none">
+						<div class="wrap left">
+							<div class="group">
+								<h5>Название услуги</h5>
+								<input type="text" />
+							</div>
+
+							<div class="group">
+								<h5>Стоимость услуги</h5>
+								<div class="select-style">
+									<select>
+										<option>500</option>
+										<option>1 000</option>
+										<option>1 500</option>
+									</select>
+								</div>
+							</div>
+							<div class="group">
+								<h5>Длительность и тип тренировки</h5>
+								<label><input type="radio" name="radio-gaga" /><span>30 минут</span></label>
+								<label><input type="radio" name="radio-gaga" /><span>55 минут</span></label>
+								<label><input type="radio" name="radio-gaga" /><span>55 минут (группа)</span></label>
+							</div>
+						</div>
+						<div class="wrap right">
+							<div class="group">
+								<h5>Формат тренировки</h5>
+								<div class="select-style">
+									<select>
+										<option>Хочу быть умным</option>
+										<option>Хочу быть сильным</option>
+										<option>Хочу быть красивым</option>
+									</select>
+								</div>
+							</div>
+							<div class="group">
+								<h5>Клуб</h5>
+								<div class="select-style">
+									<select>
+										<option>ТРЦ MARi</option>
+										<option>ТРК Columbus</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="buttons">
+							<button>Добавить услугу</button>
+							<button class="cancel" onclick="document.querySelector('#test-create-button').style.display = ''; document.querySelector('#test-edit-form').style.display = 'none'">Отменить</button>
+						</div>
+					</section>
+				</div>
+			</section>
+
 		</div>
 	</section>
 

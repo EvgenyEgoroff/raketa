@@ -24,6 +24,8 @@ textarea,
 input { font-size: 1.6em; padding: 15px; border-radius: 3px; border: 1px solid #ccc; }
 button { background: #fb2d46; color: #fff; border: 0; font-size: 1.6em; line-height: 3.5em; padding: 0 3em;}
 button:hover { opacity: .8}
+button.cancel {background: transparent; color: #000;}
+
 
 h1, h2, h3, h4, h5 { font-weight: 600; margin-bottom: 2em; }
 h1 {font-size: 3em; font-weight: 800}
@@ -35,7 +37,7 @@ h5 {font-size: 1.4em}
 
 .right {float: right;}
 .left {float: left;}
-
+.buttons {clear: both; padding: 20px 0}
 
 
 
@@ -101,9 +103,6 @@ h5 {font-size: 1.4em}
 .schedule > .wrap .popup.opened {display: block!important}
 .schedule > .wrap .popup > .wrap {position: absolute; top: 0; width: 100%; bottom:0; left: 0; right: 0; overflow: auto; padding: 50px}
 .schedule > .wrap .popup > .wrap header > h3 {margin: 0}
-.schedule > .wrap .popup > .wrap .buttons {padding: 20px 0}
-/* .schedule > .wrap .popup > .wrap .buttons button {margin-right: 20px} */
-.schedule > .wrap .popup > .wrap .buttons button.cancel {background: transparent; color: #000;}
 
 
 .sticky-head {position: fixed; max-width: 1340px; margin: 0 auto; padding: 0 50px; left: 0; right: 0; z-index: 100; top: 50px; display: none}
@@ -181,7 +180,7 @@ h5 {font-size: 1.4em}
 /* ---------------------------------------------------------------------------- */
 
 .user-page {}
-.user-page .wrap {padding-bottom: 60px}
+.user-page > .wrap {padding-bottom: 60px}
 .user-page header { margin-bottom: 30px }
 .user-page header h1 { margin: 0 }
 .user-page header:after { content: ""; display: table; clear: both; }
@@ -217,10 +216,21 @@ h5 {font-size: 1.4em}
 .user-page .logout {font-size: 2.2em; width: 100%; margin-bottom: 60px}
 
 .user-page-about {}
-.user-page-about textarea {height: 300px; width: 100%}
+.user-page-about .wrap {margin-bottom: 60px; }
+.user-page-about textarea {height: 300px; width: 100%; }
+
+
 
 .user-page-services {}
-.user-page-services .wrap {background: #fff; padding: 60px}
+.user-page-services > .wrap {background: #fff; padding: 60px; }
+.user-page-services > .wrap table {margin: 0 auto 40px; width: 100%; }
+.user-page-services > .wrap table thead td {font-size: 1.4em; padding: 1em 2em; border-bottom: 3px solid #000; }
+.user-page-services > .wrap table tbody td {font-size: 1.6em; padding: 1em 2em; border-bottom: 1px solid #ccc; }
+.user-page-services > .wrap table tbody tr:last-child td {border: 0}
+.user-page-services > .wrap table tbody tr:hover {background: #ECFF26; cursor: pointer;}
+.user-page-services > .wrap > .buttons {text-align: center;}
+.user-page-services > .wrap .edit-form {background: #ECFF26; margin: 0 -60px -60px; padding: 60px}
+.user-page-services > .wrap .edit-form > .wrap {width: 50%;}
 
 
 
@@ -228,6 +238,7 @@ h5 {font-size: 1.4em}
 /* ---------------------------------------------------------------------------- */
 
 .edit-form {}
+.edit-form:after { content: ""; display: table; clear: both; }
 .edit-form .tabs {margin-bottom: 40px}
 .edit-form .group {margin-bottom: 20px}
 .edit-form .group h5 {margin-bottom: 0}
