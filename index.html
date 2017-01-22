@@ -534,7 +534,7 @@
 
 							<div class="group">
 								<h5>До даты</h5>
-								<input type="date" />
+								<input type="date" class="date" />
 							</div>
 
 							<div class="buttons">
@@ -1654,6 +1654,30 @@
 </svg>
 
 <script type="text/javascript" src="js/table.js"></script>
+
+<script type="text/javascript">
+try {
+    var input = document.createElement("input");
+    input.type = "date";
+
+    if (input.type === "date") {
+        console.log("input type=date supported");
+    } else {
+        console.log("input type=date not supported");
+    }
+} catch(e) {
+    console.log("input type=date not supported");
+}
+
+function replaceDatePicker() {
+	[].forEach.call(document.querySelectorAll('input.date'), function(input){
+		// запускаем picker
+	});
+}
+
+replaceDatePicker();
+
+</script>
 
 </body>
 </html>
