@@ -520,7 +520,7 @@ label.right > input[type="radio"]+span:before {content: none}
 	.main {padding: 80px 20px 30px}
 
 	h1, h2, h3, h4, h5 { margin-bottom: 1em;}
-	h2 {padding: 0 20px}
+	// h2 {padding: 0 20px}
 	h2.large {padding: 0}
 
 	.l-header {}
@@ -553,12 +553,15 @@ label.right > input[type="radio"]+span:before {content: none}
 	body.mobile-menu-opened .l-header .l-nav .topmenu li a {text-align: left;}
 
 
+	.view-form .avatar {margin-bottom: 20px}
+
 	.user-page-info .registration-data,
 	.user-page-info .social-data {}
 
+	.schedule>.wrap {padding: 10px}
 	.schedule>.wrap .popup {left: 93px; }
-	.schedule>.wrap .popup>.wrap {padding: 20px 10px 20px 10px}
-	.sticky-head {margin: 0 40px;}
+	.schedule>.wrap .popup>.wrap {padding: 20px 0px 20px 10px}
+	.sticky-head {margin: 0 30px;}
 
 	.schedule > .wrap table th {width: 50px; }
 	.schedule > .wrap table td:nth-child(2) {width: 10px}
@@ -578,10 +581,10 @@ label.right > input[type="radio"]+span:before {content: none}
 
 	.notification.training .datetime .day {display: none; }
 
-	.notification.client button {position: relative; top: auto; left: 110px; margin: 0}
+	.notification.client button {position: relative; top: auto; left: 0px; margin:0 0 0 110px}
 	.notification.training .buttons {margin: 0 0 0 110px; }
 
-	.user-page header {padding: 0 20px; }
+	// .user-page header {padding: 0 20px; }
 	.user-page header h1 { width: 100%; }
 	.user-page header button.refill {margin-left: 0; }
 	.user-page header .balance {float: left!important; margin-left: 0; text-align: left; }
@@ -595,6 +598,7 @@ label.right > input[type="radio"]+span:before {content: none}
 
 	.club-settings .edit-form > .wrap {width: 100%}
 	.club-settings .edit-form > .wrap .group {float: left; margin-right: 30px}
+	.club-settings .edit-form .price .title:first-child {display: block; padding-bottom: .5ex}
 
 
 	.user-page-services > .wrap {padding: 0; }
@@ -613,7 +617,7 @@ label.right > input[type="radio"]+span:before {content: none}
 @media screen and (max-width: 500px) {
 	.main {padding: 80px 10px 30px}
 
-	.sticky-head {margin: 0 30px}
+	.sticky-head {margin: 0 20px}
 
 	.user-page-services > .wrap .edit-form > .wrap,
 	.user-page-info .registration-data,
@@ -622,6 +626,15 @@ label.right > input[type="radio"]+span:before {content: none}
 	.club-settings > .wrap {padding: 20px}
 
 	.user-page-services > .wrap .edit-form {margin: 0 0px 0px}
+
+	.notification .wrap .avatar {left: 20px;}
+	.notification .wrap h4,
+	.notification .wrap .name,
+	.notification .wrap .datetime,
+	.notification.client button,
+	.notification.training .buttons,
+	.notification .wrap .phone {margin-left: 100px!important; }
+
 
 
 }
