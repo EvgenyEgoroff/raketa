@@ -1233,6 +1233,23 @@
 
 		<h2>Клиент / сессии и персоналки</h2>
 
+		<div class="notifications">
+			<div id="notification-124" class="notification training" style="background: #ECFF26">
+				<div class="wrap" style="overflow: hidden;">
+					<h4>Новая тренировка</h4>
+
+					<div class="avatar" style="background-image: url(css/default_male300x300)"></div>
+					<div class="name">Название, либо тип тренировки. Эта тренировка выделена красной штиховкой в расписании.</div>
+					<div class="datetime"><span class="date">14.08 / 12:00</span><span class="day">пятница</span></div>
+
+					<div class="buttons">
+						<button onclick="var el = document.querySelector('#notification-124'); el.parentNode.removeChild(el);">Подтвердить</button>
+						<button class="cancel" onclick="var el = document.querySelector('#notification-124'); el.parentNode.removeChild(el);">Отклонить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<header>
 			<div class="left tabs">
 				<a class="selected" href="#">9—15 января</a>
