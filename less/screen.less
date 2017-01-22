@@ -241,7 +241,7 @@ h5 {font-size: 1.4em; font-weight: 800}
 
 .user-page-services {margin-bottom: 60px}
 .user-page-services > .wrap {background: #fff; padding: 60px; }
-.user-page-services > .wrap .club {overflow: hidden;}
+.user-page-services > .wrap .club {overflow: hidden; margin-bottom: 10px}
 .user-page-services > .wrap .club .select-style {width: 120px}
 .user-page-services > .wrap .club label {margin-top: 12px}
 .user-page-services > .wrap .club label,
@@ -257,9 +257,9 @@ h5 {font-size: 1.4em; font-weight: 800}
 */
 
 .user-page-services > .wrap > .buttons {text-align: center;}
-.user-page-services > .wrap .edit-form {background: #ECFF26; margin: 0 -60px -60px; padding: 60px}
-.user-page-services > .wrap .edit-form > .wrap {width: 50%;}
-.user-page-services > .wrap .edit-form > .buttons {padding-bottom: 0}
+.user-page-services > .wrap .edit-form {background: #ECFF26; margin: 0 -60px -60px; }
+.user-page-services > .wrap .edit-form > .wrap {width: 50%; padding: 60px; }
+.user-page-services > .wrap .edit-form > .buttons {padding: 0 60px 60px}
 
 
 .service-list {display: table; margin: 0 auto 40px; width: 100%;}
@@ -495,11 +495,14 @@ label.right > input[type="radio"]+span:before {content: none}
 	.l-nav .phone {display: none}
 	.select-style.short, input.short {width: 80px!important}
 
+	.user-page-services > .wrap .edit-form > .wrap,
 	.user-page-info .registration-data,
 	.user-page-info .social-data,
 	.user-page-services > .wrap,
 	.notification .wrap,
 	.club-settings > .wrap {padding: 40px}
+
+	.user-page-services > .wrap .edit-form {margin: 0 -40px -40px}
 
 	.notification.training .avatar {left: 40px;}
 	.notification.training .datetime {right: 40px;}
@@ -596,7 +599,9 @@ label.right > input[type="radio"]+span:before {content: none}
 
 	.user-page-services > .wrap {padding: 0; }
 	.user-page-services > .wrap .buttons {padding-top: 0; }
-	.user-page-services > .wrap .edit-form > .wrap,
+	.user-page-services > .wrap .edit-form > .wrap {width: 100%}
+	.user-page-services > .wrap .edit-form > .wrap:first-child {padding-bottom: 0}
+	.user-page-services > .wrap .edit-form > .wrap:nth-child(2) {padding-top: 0}
 
 	.service-list {}
 	.service-list > header > .titles {display: none; }
@@ -610,10 +615,14 @@ label.right > input[type="radio"]+span:before {content: none}
 
 	.sticky-head {margin: 0 30px}
 
+	.user-page-services > .wrap .edit-form > .wrap,
 	.user-page-info .registration-data,
 	.user-page-info .social-data,
 	.notification .wrap,
 	.club-settings > .wrap {padding: 20px}
+
+	.user-page-services > .wrap .edit-form {margin: 0 0px 0px}
+
 
 }
 
