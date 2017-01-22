@@ -25,10 +25,17 @@
 			</a>
 		</div>
 		<div class="aside">
-			<a href="#" class="userlogin">
-				<span>Тихон</span>
-				<svg class="svg" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-					<path d="M9.5,9.5 C7.4043,9.5 5.7,7.7957 5.7,5.7 C5.7,3.6043 7.4043,1.9 9.5,1.9 C11.5957,1.9 13.3,3.6043 13.3,5.7 C13.3,7.7957 11.5957,9.5 9.5,9.5 M13.0701,10.13935 C14.3678,9.0953 15.2,7.4955 15.2,5.7 C15.2,2.5517 12.6483,0 9.5,0 C6.3517,0 3.8,2.5517 3.8,5.7 C3.8,7.4955 4.6322,9.0953 5.9299,10.13935 C2.45385,11.4456 0,14.67275 0,19 L1.9,19 C1.9,14.25 5.30955,11.4 9.5,11.4 C13.69045,11.4 17.1,14.25 17.1,19 L19,19 C19,14.67275 16.54615,11.4456 13.0701,10.13935"></path>
+			<a href="#" onclick="document.body.classList.toggle('mobile-menu-opened'); return false;" class="mobile-menu">
+				<svg class="svg" width="71px" height="65px" viewBox="0 0 71 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+					<g stroke-width="6" stroke="#FFFFFF" class="menu-ico-open">
+						<path d="M1.69713859,19.3475021 L66.8762227,1.28983347"></path>
+						<path d="M1.69713859,39.9848376 L66.8762227,21.927169"></path>
+						<path d="M1.69713859,60.6221731 L66.8762227,42.5645045"></path>
+					</g>
+					<g stroke-width="6" stroke="#FFFFFF" class="menu-ico-close">
+						<path d="M0,65 L71,0"></path>
+						<path d="M71,65 L0,0"></path>
+					</g>
 				</svg>
 			</a>
 		</div>
@@ -36,6 +43,14 @@
 			<li class="selected"><a href="#">Расписание</a></li>
 			<li><a href="#">Клиенты</a></li>
 			<li><a href="#">Тренеры</a></li>
+			<li class="userlogin">
+				<a href="#">
+					<span>Тихон</span>
+					<svg class="svg" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<path d="M9.5,9.5 C7.4043,9.5 5.7,7.7957 5.7,5.7 C5.7,3.6043 7.4043,1.9 9.5,1.9 C11.5957,1.9 13.3,3.6043 13.3,5.7 C13.3,7.7957 11.5957,9.5 9.5,9.5 M13.0701,10.13935 C14.3678,9.0953 15.2,7.4955 15.2,5.7 C15.2,2.5517 12.6483,0 9.5,0 C6.3517,0 3.8,2.5517 3.8,5.7 C3.8,7.4955 4.6322,9.0953 5.9299,10.13935 C2.45385,11.4456 0,14.67275 0,19 L1.9,19 C1.9,14.25 5.30955,11.4 9.5,11.4 C13.69045,11.4 17.1,14.25 17.1,19 L19,19 C19,14.67275 16.54615,11.4456 13.0701,10.13935"></path>
+					</svg>
+				</a>
+			</li>
 			<li class="phone"><a href="tel:+74957772223">+7 (495) 777-22-23</a></li>
 		</ul>
 	</nav>
@@ -67,20 +82,20 @@
 						<div class="value">strana@shiroka.ru</div>
 					</div>
 					<div class="price">
-						<h4>Тренировка (30 минут)</h4>
-						<div class="value">1000 ₽</div>
+						<h4>Тренировка (30&nbsp;минут)</h4>
+						<div class="value">1000&nbsp;₽</div>
 					</div>
 					<div class="price">
-						<h4>Тренировка (55 минут)</h4>
-						<div class="value">2000 ₽</div>
+						<h4>Тренировка (55&nbsp;минут)</h4>
+						<div class="value">2000&nbsp;₽</div>
 					</div>
 					<div class="price">
-						<h4>Группа (30 минут)</h4>
-						<div class="value">1500 ₽</div>
+						<h4>Группа (30&nbsp;минут)</h4>
+						<div class="value">1500&nbsp;₽</div>
 					</div>
 					<div class="price">
-						<h4>Группа (55 минут)</h4>
-						<div class="value">2500 ₽</div>
+						<h4>Группа (55&nbsp;минут)</h4>
+						<div class="value">2500&nbsp;₽</div>
 					</div>
 				</div>
 				<div class="social-data">
@@ -107,7 +122,7 @@
 						<header>
 							<div class="titles">
 								<div class="caption">Название тренировки</div>
-								<div class="type">Длительность и тип тренировки</div>
+								<div class="type">Длительность и тип&nbsp;тренировки</div>
 								<div class="format">Формат тренировки</div>
 								<div class="club">Клуб и стоимость</div>
 							</div>
@@ -115,21 +130,21 @@
 						<div class="wrap">
 							<div class="service">
 								<div class="caption">Глупости с блинами</div>
-								<div class="type">55 минут (группа)</div>
+								<div class="type">Группа (55&nbsp;минут)</div>
 								<div class="format">Хочу быть умным</div>
-								<div class="club">ТРЦ MARi — 1 000 ₽<br/>ТРЦ Columbus — 1 000 ₽</div>
+								<div class="club">ТРЦ MARi — 1&nbsp;000&nbsp;₽<br/>ТРЦ Columbus — 1&nbsp;000&nbsp;₽</div>
 							</div>
 							<div class="service">
 								<div class="caption">Глупости с блинами</div>
-								<div class="type">55 минут (группа)</div>
+								<div class="type">Группа (55&nbsp;минут)</div>
 								<div class="format">Хочу быть умным</div>
-								<div class="club">ТРЦ Columbus — 1 000 ₽</div>
+								<div class="club">ТРЦ Columbus — 1&nbsp;000&nbsp;₽</div>
 							</div>
 							<div class="service">
 								<div class="caption">Глупости с блинами</div>
-								<div class="type">55 минут (группа)</div>
+								<div class="type">Группа (55&nbsp;минут)</div>
 								<div class="format">Хочу быть умным</div>
-								<div class="club">ТРЦ MARi — 1 000 ₽</div>
+								<div class="club">ТРЦ MARi — 1&nbsp;000&nbsp;₽</div>
 							</div>
 						</div>
 					</section>
@@ -144,7 +159,7 @@
 			<header>
 				<h1 class="left">Фамильный<br/>Клиент Посетителевич</h1>
 				<div class="balance right">
-					<div class="balance-value left"><span class="title">Баланс</span><span class="value">8 500 ₽</span></div>
+					<div class="balance-value left"><span class="title">Баланс</span><span class="value">8&nbsp;500&nbsp;₽</span></div>
 					<button class="refill right">Пополнить</button>
 				</div>			
 			</header>
@@ -180,7 +195,7 @@
 							<use xlink:href="#twitter" />
 						</svg>
 					</div>
-					<p>Приглашай друзей и накапливай баллы.  При заключении контракта, ты и твой друг  полчаете в подарок 1 500₽.</p>
+					<p>Приглашай друзей и накапливай баллы.  При заключении контракта, ты и твой друг  полчаете в подарок 1&nbsp;500₽.</p>
 				</div>
 			</section>
 			<button class="logout">Выйти из кабинета</button>
@@ -190,15 +205,15 @@
 	<section class="user-page">
 		<div class="wrap">
 			<header>
-				<h1 class="left">Качков<br/>Жим приседович</h1>
+				<h1 class="left">Качков<br/>Жим Приседович</h1>
 				<div class="balance right">
-					<div class="balance-value left"><span class="title">Начислено</span><span class="value">15 000 ₽</span></div>
+					<div class="balance-value left"><span class="title">Начислено</span><span class="value">15&nbsp;000&nbsp;₽</span></div>
 				</div>
 				<div class="balance right">
-					<div class="balance-value left"><span class="title">Депозит</span><span class="value">8 500 ₽</span></div>
+					<div class="balance-value left"><span class="title">Депозит</span><span class="value">8&nbsp;500&nbsp;₽</span></div>
 				</div>
 				<div class="balance right">
-					<div class="balance-value left"><span class="title">Аренда</span><span class="value">–5 000 ₽</span></div>
+					<div class="balance-value left"><span class="title">Аренда</span><span class="value">–5&nbsp;000&nbsp;₽</span></div>
 				</div>
 			</header>
 			<section class="user-page-info">
@@ -245,7 +260,8 @@
 			<section class="user-page-about">
 				<h2>Обо мне</h2>
 				<div class="wrap">
-					<textarea></textarea>
+					<textarea>При редактировании появляется кнопка "Сохранить", по нажатию выполняется сохранение и кнопка пропадает.</textarea>
+					<button>Сохранить</button>
 				</div>
 			</section>
 
@@ -256,7 +272,7 @@
 						<header>
 							<div class="titles">
 								<div class="caption">Название тренировки</div>
-								<div class="type">Длительность и тип тренировки</div>
+								<div class="type">Длительность и тип&nbsp;тренировки</div>
 								<div class="format">Формат тренировки</div>
 								<div class="club">Клуб и стоимость</div>
 							</div>
@@ -264,21 +280,21 @@
 						<div class="wrap">
 							<div class="service">
 								<div class="caption">Глупости с блинами</div>
-								<div class="type">55 минут (группа)</div>
+								<div class="type">Группа (55&nbsp;минут)</div>
 								<div class="format">Хочу быть умным</div>
-								<div class="club">ТРЦ MARi — 1 000 ₽<br/>ТРЦ Columbus — 1 000 ₽</div>
+								<div class="club">ТРЦ MARi — 1&nbsp;000&nbsp;₽<br/>ТРЦ Columbus — 1&nbsp;000&nbsp;₽</div>
 							</div>
 							<div class="service">
 								<div class="caption">Глупости с блинами</div>
-								<div class="type">55 минут (группа)</div>
+								<div class="type">Группа (55&nbsp;минут)</div>
 								<div class="format">Хочу быть умным</div>
-								<div class="club">ТРЦ Columbus — 1 000 ₽</div>
+								<div class="club">ТРЦ Columbus — 1&nbsp;000&nbsp;₽</div>
 							</div>
 							<div class="service">
 								<div class="caption">Глупости с блинами</div>
-								<div class="type">55 минут (группа)</div>
+								<div class="type">Группа (55&nbsp;минут)</div>
 								<div class="format">Хочу быть умным</div>
-								<div class="club">ТРЦ MARi — 1 000 ₽</div>
+								<div class="club">ТРЦ MARi — 1&nbsp;000&nbsp;₽</div>
 							</div>
 						</div>
 					</section>
@@ -303,9 +319,9 @@
 							</div>
 							<div class="group">
 								<h5>Длительность и тип тренировки</h5>
-								<label><input type="radio" name="radio-gaga" /><span>30 минут</span></label>
-								<label><input type="radio" name="radio-gaga" /><span>55 минут</span></label>
-								<label><input type="radio" name="radio-gaga" /><span>55 минут (группа)</span></label>
+								<label><input type="radio" name="radio-gaga" /><span>30&nbsp;минут</span></label>
+								<label><input type="radio" name="radio-gaga" /><span>55&nbsp;минут</span></label>
+								<label><input type="radio" name="radio-gaga" /><span>Группа (55&nbsp;минут)</span></label>
 							</div>
 						</div>
 						<div class="wrap right">
@@ -319,8 +335,8 @@
 									<div class="select-style short">
 										<select disabled="disabled" id="test-price-1">
 											<option>500</option>
-											<option>1 000</option>
-											<option>1 500</option>
+											<option>1&nbsp;000</option>
+											<option>1&nbsp;500</option>
 										</select>
 									</div>
 								</div>
@@ -332,8 +348,8 @@
 									<div class="select-style short">
 										<select disabled="disabled" id="test-price-2">
 											<option>500</option>
-											<option>1 000</option>
-											<option>1 500</option>
+											<option>1&nbsp;000</option>
+											<option>1&nbsp;500</option>
 										</select>
 									</div>
 								</div>
@@ -414,13 +430,13 @@
 							<div class="group">
 								<h5>Диапазон стоимости платных тренировок</h5>
 								<div class="price">
-									<span class="title">30 минут</span> <input type="text" class="short" /> <span class="delimiter">—</span> <input type="text" class="short" /><span class="title">₽</span>
+									<span class="title">30&nbsp;минут</span> <input type="text" class="short" /> <span class="delimiter">—</span> <input type="text" class="short" /><span class="title">₽</span>
 								</div>
 								<div class="price">
 									<span class="title">60 минут</span> <input type="text" class="short" /> <span class="delimiter">—</span> <input type="text" class="short" /><span class="title">₽</span>
 								</div>
 								<div class="price">
-									<span class="title">Группа — 30 минут</span> <input type="text" class="short" /> <span class="delimiter">—</span> <input type="text" class="short" /><span class="title">₽</span>
+									<span class="title">Группа — 30&nbsp;минут</span> <input type="text" class="short" /> <span class="delimiter">—</span> <input type="text" class="short" /><span class="title">₽</span>
 								</div>
 								<div class="price">
 									<span class="title">Группа — 60 минут</span> <input type="text" class="short" /> <span class="delimiter">—</span> <input type="text" class="short" /><span class="title">₽</span>
@@ -452,7 +468,7 @@
 					<div class="name">Большаков Тихон Дмитриевич</div>
 					<div class="phone">+7 (926) 814-53-71</div>
 
-					<button onclick="var el = document.querySelector('#notification-123'); el.parentNode.removeChild(el);">Я уже связался</button>
+					<button onclick="var el = document.querySelector('#notification-123'); el.parentNode.removeChild(el);">Уже связался</button>
 				</div>
 			</div>
 		</div>
@@ -476,10 +492,10 @@
 			</div>
 
 			<div class="left tabs">
-				<a class="selected" href="#">9—15 января</a>
-				<a href="#">16—23 января</a>
-				<a href="#">23—29 января</a>
-				<a href="#">30 января — 5 февраля</a>
+				<a class="selected" href="#">9—15 янв<span class="extra">аря</span></a>
+				<a href="#">16—23 янв<span class="extra">аря</span></a>
+				<a href="#">23—29 янв<span class="extra">аря</span></a>
+				<a href="#">30 янв<span class="extra">аря</span> — 5 фев<span class="extra">раля</span></a>
 			</div>
 		</header>
 
@@ -493,9 +509,9 @@
 						<div class="wrap">
 
 							<div class="tabs">
-								<a class="selected" href="#">30 минут</a>
-								<a href="#">55 минут</a>
-								<a href="#">55 минут (группа)</a>
+								<a class="selected" href="#">30&nbsp;минут</a>
+								<a href="#">55&nbsp;минут</a>
+								<a href="#">Группа (55&nbsp;минут)</a>
 							</div>
 
 							<div class="group">
@@ -516,9 +532,9 @@
 
 							<div class="group">
 								<h5>Тип тренировки</h5>
-								<label><input type="radio" name="radio-gaga" /><span>30 минут</span></label>
-								<label><input type="radio" name="radio-gaga" /><span>55 минут</span></label>
-								<label><input type="radio" name="radio-gaga" /><span>55 минут (группа)</span></label>
+								<label><input type="radio" name="radio-gaga" /><span>30&nbsp;минут</span></label>
+								<label><input type="radio" name="radio-gaga" /><span>55&nbsp;минут</span></label>
+								<label><input type="radio" name="radio-gaga" /><span>Группа (55&nbsp;минут)</span></label>
 							</div>
 
 							<div class="group">
@@ -961,10 +977,10 @@
 
 		<header>
 			<div class="left tabs">
-				<a class="selected" href="#">9—15 января</a>
-				<a href="#">16—23 января</a>
-				<a href="#">23—29 января</a>
-				<a href="#">30 января — 5 февраля</a>
+				<a class="selected" href="#">9—15 янв<span class="extra">аря</span></a>
+				<a href="#">16—23 янв<span class="extra">аря</span></a>
+				<a href="#">23—29 янв<span class="extra">аря</span></a>
+				<a href="#">30 янв<span class="extra">аря</span> — 5 фев<span class="extra">раля</span></a>
 			</div>
 		</header>
 
@@ -1098,10 +1114,10 @@
 
 		<header>
 			<div class="left tabs">
-				<a class="selected" href="#">9—15 января</a>
-				<a href="#">16—23 января</a>
-				<a href="#">23—29 января</a>
-				<a href="#">30 января — 5 февраля</a>
+				<a class="selected" href="#">9—15 янв<span class="extra">аря</span></a>
+				<a href="#">16—23 янв<span class="extra">аря</span></a>
+				<a href="#">23—29 янв<span class="extra">аря</span></a>
+				<a href="#">30 янв<span class="extra">аря</span> — 5 фев<span class="extra">раля</span></a>
 			</div>
 		</header>
 
@@ -1238,8 +1254,8 @@
 					<h4>Новая тренировка</h4>
 
 					<div class="avatar" style="background-image: url(css/default_male300x300)"></div>
-					<div class="name">Название, либо тип тренировки. Эта тренировка выделена красной штиховкой в расписании.</div>
 					<div class="datetime"><span class="date">14.08 / 12:00</span><span class="day">пятница</span></div>
+					<div class="name">Название, либо тип тренировки. Эта тренировка выделена красной штиховкой в расписании.</div>
 
 					<div class="buttons">
 						<button onclick="var el = document.querySelector('#notification-124'); el.parentNode.removeChild(el);">Подтвердить</button>
@@ -1250,13 +1266,6 @@
 		</div>
 
 		<header>
-			<div class="left tabs">
-				<a class="selected" href="#">9—15 января</a>
-				<a href="#">16—23 января</a>
-				<a href="#">23—29 января</a>
-				<a href="#">30 января — 5 февраля</a>
-			</div>
-
 			<div class="select-style right">
 			<select>
 				<optgroup>
@@ -1269,6 +1278,12 @@
 			</select>
 			</div>
 
+			<div class="left tabs">
+				<a class="selected" href="#">9—15 янв<span class="extra">аря</span></a>
+				<a href="#">16—23 янв<span class="extra">аря</span></a>
+				<a href="#">23—29 янв<span class="extra">аря</span></a>
+				<a href="#">30 янв<span class="extra">аря</span> — 5 фев<span class="extra">раля</span></a>
+			</div>
 
 			<!--
 			<label class="right checkbox">
@@ -1290,7 +1305,7 @@
 							<div class="avatar" style="background-image: url(css/default_male300x300)"></div>
 							<div class="group">
 								<h4>Качков Жим Приседович</h4>
-								<p class="price">1 500 ₽</p>
+								<p class="price">1&nbsp;500&nbsp;₽</p>
 								<p>Какой-либо другой текст / пункт / значение</p>
 								<p>Какой-либо другой текст / пункт / значение</p>
 							</div>
@@ -1553,12 +1568,6 @@
 
 	<section class="user-list">
 		<header>
-			<div class="tabs left">
-				<a href="#">По рейтингу</a>
-				<a class="selected" href="#">По цене</a>
-				<a href="#">По клубам</a>
-			</div>
-
 			<div class="select-style right">
 			<select>
 				<optgroup>
@@ -1569,6 +1578,12 @@
 					<option>ТРЦ Columbus</option>
 				</optgroup>
 			</select>
+			</div>
+
+			<div class="tabs left">
+				<a href="#">По рейтингу</a>
+				<a class="selected" href="#">По цене</a>
+				<a href="#">По клубам</a>
 			</div>
 		</header>
 
