@@ -26,6 +26,7 @@ button { background: #fb2d46; color: #fff; border: 0; font-size: 1.6em; line-hei
 button:hover { opacity: .8}
 button.cancel {background: transparent; color: #000;}
 
+input.short {width: 150px!important}
 
 h1, h2, h3, h4, h5 { font-weight: 600; margin-bottom: 2em; }
 h1 {font-size: 3em; font-weight: 800}
@@ -39,7 +40,7 @@ h5 {font-size: 1.4em}
 .left {float: left;}
 .buttons {clear: both; padding: 20px 0}
 
-
+.delimiter {margin: 0 5px; font-size: 1.6em}
 
 
 
@@ -244,6 +245,11 @@ h5 {font-size: 1.4em}
 
 
 .club-settings > .wrap {background: #fff; padding: 60px;}
+.club-settings .edit-form > .wrap {width: 50%; float: left; }
+.club-settings .edit-form .price .title {font-size: 1.6em}
+.club-settings .edit-form .price .title:first-child {margin-right: 10px; }
+.club-settings .edit-form .count .title,
+.club-settings .edit-form .price .title:last-child {margin-left: 10px; }
 
 
 
@@ -254,17 +260,19 @@ h5 {font-size: 1.4em}
 
 .edit-form {}
 .edit-form:after { content: ""; display: table; clear: both; }
+.edit-form .nl {display: block; clear: both; margin-top: -15px}
 .edit-form .tabs {margin-bottom: 40px}
 .edit-form .group {margin-bottom: 20px}
 .edit-form .group h5 {margin-bottom: 0}
 .edit-form .group input[type=text] {margin: 12px 0; width: 450px}
 .edit-form .group input[type=date] {margin: 12px 0}
 .edit-form .group .select-style {margin: 12px 0}
-.edit-form .group label {font-size: 1.6em; line-height: 3.5em}
+.edit-form .group label {font-size: 1.6em; line-height: 3.5em; vertical-align: middle;}
 .edit-form .group label>input[type=radio]+span:before,
 .edit-form .group label>input[type=checkbox]+span:before {margin-left: 0;}
 .edit-form .group label>input[type=radio]+span,
 .edit-form .group label>input[type=checkbox]+span {margin-right: 20px}
+
 
 
 
@@ -374,6 +382,7 @@ label.right > input[type="radio"]+span:before {content: none}
 
 
 .select-style {
+	vertical-align: middle;
 	display: inline-block;
     padding: 10px 0;
     margin: 0;
@@ -415,6 +424,9 @@ label.right > input[type="radio"]+span:before {content: none}
     color: transparent;
     text-shadow: 0 0 0 #000;
 }
+
+.select-style.price,
+.select-style.time {width: 150px}
 
 
 

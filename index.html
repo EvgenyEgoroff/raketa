@@ -220,7 +220,7 @@
 										<input type="checkbox" onclick="var select = document.querySelector('#test-price-1'); if (this.checked) {select.removeAttribute('disabled')} else {select.setAttribute('disabled', 'disabled')}">
 										<span>ТРЦ MARi</span>
 									</label>
-									<div class="select-style">
+									<div class="select-style price">
 										<select disabled="disabled" id="test-price-1">
 											<option>500</option>
 											<option>1 000</option>
@@ -233,7 +233,7 @@
 										<input type="checkbox" onclick="var select = document.querySelector('#test-price-2'); if (this.checked) {select.removeAttribute('disabled')} else {select.setAttribute('disabled', 'disabled')}">
 										<span>ТРК Columbus</span>
 									</label>
-									<div class="select-style">
+									<div class="select-style price">
 										<select disabled="disabled" id="test-price-2">
 											<option>500</option>
 											<option>1 000</option>
@@ -251,6 +251,94 @@
 				</div>
 			</section>
 
+			<section class="club-settings">
+				<h2>Настройки клуба</h2>
+				<div class="wrap">
+					<div class="edit-form">
+						<div class="wrap">
+							<div class="group">
+								<h5>Часы работы в будни</h5>
+								<div class="select-style time">
+									<select>
+										<option>8:00</option>
+										<option>9:00</option>
+										<option>10:00</option>
+										<option>11:00</option>
+									</select>
+								</div>
+								<span class="delimiter">—</span>
+								<div class="select-style time">
+									<select>
+										<option>21:00</option>
+										<option>22:00</option>
+										<option>23:00</option>
+										<option>00:00</option>
+									</select>
+								</div>
+								<label class="nl">
+									<input type="checkbox" name="">
+									<span>круглосуточно</span>
+								</label>
+							</div>
+							<div class="group">
+								<h5>Часы работы в выходные</h5>
+								<div class="select-style time">
+									<select>
+										<option>8:00</option>
+										<option>9:00</option>
+										<option>10:00</option>
+										<option>11:00</option>
+									</select>
+								</div>
+								<span class="delimiter">—</span>
+								<div class="select-style time">
+									<select>
+										<option>21:00</option>
+										<option>22:00</option>
+										<option>23:00</option>
+										<option>00:00</option>
+									</select>
+								</div>
+								<label class="nl">
+									<input type="checkbox" name="">
+									<span>круглосуточно</span>
+								</label>
+							</div>
+							<div class="group">
+								<h5>Вместимость клуба</h5>
+								<div class="count">
+									<label>
+										<input type="text" class="short" />
+										<span class="title">чел.</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="wrap">
+							<div class="group">
+								<h5>Диапазон стоимости платных тренировок</h5>
+								<div class="price">
+									<span class="title">30 минут</span> <input type="text" class="short" /> <span class="delimiter">—</span> <input type="text" class="short" /><span class="title">₽</span>
+								</div>
+								<div class="price">
+									<span class="title">60 минут</span> <input type="text" class="short" /> <span class="delimiter">—</span> <input type="text" class="short" /><span class="title">₽</span>
+								</div>
+								<div class="price">
+									<span class="title">Группа — 30 минут</span> <input type="text" class="short" /> <span class="delimiter">—</span> <input type="text" class="short" /><span class="title">₽</span>
+								</div>
+								<div class="price">
+									<span class="title">Группа — 60 минут</span> <input type="text" class="short" /> <span class="delimiter">—</span> <input type="text" class="short" /><span class="title">₽</span>
+								</div>
+
+							</div>
+						</div>
+						<div class="buttons">
+							<button>Обновить</button>
+							<button class="cancel">Отменить</button>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 	</section>
 
