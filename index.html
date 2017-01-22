@@ -46,6 +46,67 @@
 	<section class="user-page">
 		<div class="wrap">
 			<header>
+				<h1 class="left">Жимов<br/>Присед Станович</h1>
+				<div class="balance right">
+					<button class="refill right">Запросить тренировку</button>
+				</div>			
+			</header>
+			<section class="user-page-info">
+				<div class="registration-data">
+					<div class="avatar" style="background-image: url(css/default_male300x300)"></div>
+					<div class="club">
+						<h5>Любимый клуб</h5>
+						<div class="value">Жара</div>
+					</div>
+					<div class="phone">
+						<h5>Номер телефона</h5>
+						<div class="value">+7 (926) 814-53-71</div>
+					</div>
+					<div class="email">
+						<h5>Электронная почта</h5>
+						<div class="value">strana@shiroka.ru</div>
+					</div>
+					<div class="price">
+						<h5>Тренировка (30 минут)</h5>
+						<div class="value">1000 ₽</div>
+					</div>
+					<div class="price">
+						<h5>Тренировка (55 минут)</h5>
+						<div class="value">2000 ₽</div>
+					</div>
+					<div class="price">
+						<h5>Группа (30 минут)</h5>
+						<div class="value">1500 ₽</div>
+					</div>
+					<div class="price">
+						<h5>Группа (55 минут)</h5>
+						<div class="value">2500 ₽</div>
+					</div>
+				</div>
+				<div class="social-data">
+					<h2 class="large">О себе</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur, libero eu laoreet efficitur, nulla nunc fringilla eros, sed varius dui lectus vel risus. Quisque quis sapien tortor. Nullam lacinia molestie cursus. Duis sed nisl est. Ut iaculis vehicula pharetra. Sed a efficitur lectus. Nam mauris velit, varius id velit nec, interdum feugiat sapien. Suspendisse lobortis hendrerit augue, eget semper mi feugiat in. Phasellus quam elit, blandit eget massa non, congue ultrices elit. Donec elementum volutpat tortor, a finibus diam placerat in.</p>
+					<p>Nam consequat arcu quis felis eleifend, faucibus malesuada nulla tincidunt. Proin tristique, risus quis interdum suscipit, urna sapien venenatis nisl, non condimentum erat orci nec dolor. Etiam hendrerit vestibulum accumsan. Praesent vel justo purus. Duis dignissim, eros quis rutrum fermentum, magna augue aliquam urna, vitae semper lacus augue sed leo.</p>
+					<div class="socials">
+						<svg viewBox="0 0 42 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="height: 42px; width: 42px">
+							<use xlink:href="#vkontakte" />
+						</svg>
+						<svg viewBox="0 0 42 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="height: 42px; width: 42px">
+							<use xlink:href="#facebook" />
+						</svg>
+						<svg viewBox="0 0 49 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="height: 42px; width: 49px">
+							<use xlink:href="#twitter" />
+						</svg>
+					</div>
+				</div>
+			</section>
+			<!-- <button class="logout">Запросить тренировку</button> -->
+		</div>
+	</section>
+
+	<section class="user-page">
+		<div class="wrap">
+			<header>
 				<h1 class="left">Фамильный<br/>Клиент Посетителевич</h1>
 				<div class="balance right">
 					<div class="balance-value left"><span class="title">Баланс</span><span class="value">8 500 ₽</span></div>
@@ -121,7 +182,7 @@
 						<div class="value">strana@shiroka.ru</div>
 					</div>
 					<div class="stop">
-						<button>Приостановить абонемент</button>
+						<button>Приостановить работу</button>
 					</div>
 				</div>
 				<div class="social-data">
@@ -220,7 +281,7 @@
 										<input type="checkbox" onclick="var select = document.querySelector('#test-price-1'); if (this.checked) {select.removeAttribute('disabled')} else {select.setAttribute('disabled', 'disabled')}">
 										<span>ТРЦ MARi</span>
 									</label>
-									<div class="select-style price">
+									<div class="select-style short">
 										<select disabled="disabled" id="test-price-1">
 											<option>500</option>
 											<option>1 000</option>
@@ -233,7 +294,7 @@
 										<input type="checkbox" onclick="var select = document.querySelector('#test-price-2'); if (this.checked) {select.removeAttribute('disabled')} else {select.setAttribute('disabled', 'disabled')}">
 										<span>ТРК Columbus</span>
 									</label>
-									<div class="select-style price">
+									<div class="select-style short">
 										<select disabled="disabled" id="test-price-2">
 											<option>500</option>
 											<option>1 000</option>
@@ -258,7 +319,7 @@
 						<div class="wrap">
 							<div class="group">
 								<h5>Часы работы в будни</h5>
-								<div class="select-style time">
+								<div class="select-style short">
 									<select>
 										<option>8:00</option>
 										<option>9:00</option>
@@ -267,7 +328,7 @@
 									</select>
 								</div>
 								<span class="delimiter">—</span>
-								<div class="select-style time">
+								<div class="select-style short">
 									<select>
 										<option>21:00</option>
 										<option>22:00</option>
@@ -282,7 +343,7 @@
 							</div>
 							<div class="group">
 								<h5>Часы работы в выходные</h5>
-								<div class="select-style time">
+								<div class="select-style short">
 									<select>
 										<option>8:00</option>
 										<option>9:00</option>
@@ -291,7 +352,7 @@
 									</select>
 								</div>
 								<span class="delimiter">—</span>
-								<div class="select-style time">
+								<div class="select-style short">
 									<select>
 										<option>21:00</option>
 										<option>22:00</option>
@@ -1433,6 +1494,7 @@
 			<div class="tabs left">
 				<a href="#">По рейтингу</a>
 				<a class="selected" href="#">По цене</a>
+				<a href="#">По клубам</a>
 			</div>
 
 			<div class="select-style right">

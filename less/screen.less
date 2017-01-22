@@ -26,6 +26,7 @@ button { background: #fb2d46; color: #fff; border: 0; font-size: 1.6em; line-hei
 button:hover { opacity: .8}
 button.cancel {background: transparent; color: #000;}
 
+.select-style.short,
 input.short {width: 150px!important}
 
 h1, h2, h3, h4, h5 { font-weight: 600; margin-bottom: 2em; }
@@ -98,6 +99,8 @@ h5 {font-size: 1.4em}
 
 /* Расписание */
 /* ---------------------------------------------------------------------------- */
+
+.schedule > header label {font-size: 1.6em; line-height: 3.5em; vertical-align: middle;}
 
 .schedule > .wrap {background: #fff; padding: 20px; position: relative; margin-bottom: 100px}
 .schedule > .wrap .popup {position: absolute; background: #fff; left: 210px; top: 97px; right: 20px; bottom: 20px; min-height: 200px; z-index: 99}
@@ -194,15 +197,17 @@ h5 {font-size: 1.4em}
 .user-page-info { background: #fff; display: table; width: 100%; }
 .user-page-info .registration-data {display: table-cell; width: 50%; padding: 60px; }
 .user-page-info .registration-data .avatar { background-color: #fff; display: block; height: 100px; width: 100px; border-radius: 50px; border: 1px solid rgba(0,0,0,.3); overflow: hidden; background-size: cover; margin-bottom: 50px }
+.user-page-info .registration-data .price,
 .user-page-info .registration-data .club,
 .user-page-info .registration-data .phone {float: left; width: 50%; margin-bottom: 30px}
 .user-page-info .registration-data .email {clear: both; margin-bottom: 30px; }
 .user-page-info .registration-data h5 { color: #d6d6d9; margin-bottom: .5em; font-size: 1.8em }
 .user-page-info .registration-data .value { font-size: 1.8em }
+.user-page-info .registration-data .price .value {font-size: 3em}
 
 .user-page-info .social-data {background: #ECFF26; display: table-cell; width: 50%; padding: 60px; vertical-align: top; }
 // .user-page-info .social-data h2.large {margin-bottom: 1em}
-.user-page-info .social-data .socials {margin-right: 20px; margin-bottom: 30px; }
+.user-page-info .social-data .socials {margin:30px 20px 30px 0;}
 .user-page-info .social-data .socials svg {margin-right: 25px}
 .user-page-info .social-data .socials svg:hover {opacity: .8; cursor: pointer;}
 .user-page-info .social-data .socials svg * {fill: #FB2D46}
@@ -225,7 +230,7 @@ h5 {font-size: 1.4em}
 .user-page-services {margin-bottom: 60px}
 .user-page-services > .wrap {background: #fff; padding: 60px; }
 .user-page-services > .wrap .club {overflow: hidden;}
-.user-page-services > .wrap .club .select-style {width: 150px}
+.user-page-services > .wrap .club .select-style {width: 120px}
 .user-page-services > .wrap .club label {margin-top: 12px}
 .user-page-services > .wrap .club label,
 .user-page-services > .wrap .club span {float: left}
@@ -425,9 +430,10 @@ label.right > input[type="radio"]+span:before {content: none}
     text-shadow: 0 0 0 #000;
 }
 
+/*
 .select-style.price,
 .select-style.time {width: 150px}
-
+*/
 
 
 
