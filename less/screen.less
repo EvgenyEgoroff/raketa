@@ -195,6 +195,7 @@ h5 {font-size: 1.4em}
 .user-page header button.refill { margin-left: 30px }
 
 .user-page-info { background: #fff; display: table; width: 100%; }
+.user-page-info + .user-page-services { margin-top: 60px }
 .user-page-info .registration-data {display: table-cell; width: 50%; padding: 60px; }
 .user-page-info .registration-data .avatar { background-color: #fff; display: block; height: 100px; width: 100px; border-radius: 50px; border: 1px solid rgba(0,0,0,.3); overflow: hidden; background-size: cover; margin-bottom: 50px }
 .user-page-info .registration-data .price,
@@ -219,7 +220,7 @@ h5 {font-size: 1.4em}
 
 .user-page-info .social-data p {font-size: 1.8em; margin-bottom: 1em}
 
-.user-page .logout {font-size: 2.2em; width: 100%; margin-bottom: 60px}
+.user-page .logout {clear:both; font-size: 2.2em; width: 100%; margin-bottom: 60px}
 
 .user-page-about {}
 .user-page-about .wrap {margin-bottom: 60px; }
@@ -234,18 +235,40 @@ h5 {font-size: 1.4em}
 .user-page-services > .wrap .club label {margin-top: 12px}
 .user-page-services > .wrap .club label,
 .user-page-services > .wrap .club span {float: left}
+
+/*
 .user-page-services > .wrap table {margin: 0 auto 40px; width: 100%; }
 .user-page-services > .wrap table thead td {font-size: 1.4em; padding: 1em 2em; border-bottom: 3px solid #000; }
 .user-page-services > .wrap table tbody td {font-size: 1.6em; padding: 1em 2em; border-bottom: 1px solid #ccc; }
 .user-page-services > .wrap table tbody tr:last-child td {border: 0}
 .user-page-services > .wrap table tbody tr.selected,
 .user-page-services > .wrap table tbody tr:hover {background: #ECFF26; cursor: pointer;}
+*/
+
 .user-page-services > .wrap > .buttons {text-align: center;}
 .user-page-services > .wrap .edit-form {background: #ECFF26; margin: 0 -60px -60px; padding: 60px}
 .user-page-services > .wrap .edit-form > .wrap {width: 50%;}
 
 
+.service-list {display: table; margin: 0 auto 40px; width: 100%;}
+.service-list > header {display: table-header-group;}
+.service-list > .wrap {display: table-row-group;}
+.service-list > header > .titles,
+.service-list > .wrap > .service {display: table-row;}
+.service-list > header > .titles > div,
+.service-list > .wrap > .service > div {display: table-cell;}
 
+.service-list > header > .titles > div:first-child,
+.service-list > .wrap > .service > div:first-child {padding-left: 0;}
+
+.service-list > header > .titles > div:last-child,
+.service-list > .wrap > .service > div:last-child {padding-right: 0;}
+
+.service-list > header > .titles > div {font-size: 1.4em; padding: 1em 2em; border-bottom: 3px solid #000;}
+.service-list > .wrap > .service > div {font-size: 1.6em; padding: 1em 2em; border-bottom: 1px solid #ccc;}
+.service-list > .wrap > .service.selected,
+.service-list > .wrap > .service:hover {background: #ECFF26; cursor: pointer;}
+.service-list > .wrap > .service:last-child > div {border: 0;}
 
 
 
