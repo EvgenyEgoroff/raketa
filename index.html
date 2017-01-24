@@ -11,7 +11,12 @@
 	
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/reset.min.css" />
+
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+
 	<link rel="stylesheet" href="css/screen.css" />
+
+
 </head>
 <body>
 
@@ -550,7 +555,9 @@
 
 							<div class="group">
 								<h5>До даты</h5>
-								<input type="date" class="date" />
+								<div id="datepicker">
+									<input type="text" class="date" />
+								</div>
 							</div>
 
 							<div class="buttons">
@@ -1668,9 +1675,21 @@
     </defs>
 </svg>
 
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/table.js"></script>
 
+
 <script type="text/javascript">
+$(function(){
+
+	$( "input.date" ).datepicker();
+
+});
+
+
+/*
 try {
     var input = document.createElement("input");
     input.type = "date";
@@ -1691,7 +1710,7 @@ function replaceDatePicker() {
 }
 
 replaceDatePicker();
-
+*/
 </script>
 
 </body>
