@@ -27,7 +27,7 @@ button:hover { opacity: .8}
 button.cancel {background: transparent; border-color: transparent; color: #000; font-weight: 800}
 
 .select-style.short,
-input.short {width: 150px!important}
+input.short {width: 150px!important; min-width: initial;}
 
 h1, h2, h3, h4, h5 { font-weight: 600; margin-bottom: 2em; padding-right: 10px}
 h1 {font-size: 3em; font-weight: 800}
@@ -257,7 +257,7 @@ h5 {font-size: 1.4em; font-weight: 800}
 */
 
 .user-page-services > .wrap > .buttons {text-align: center;}
-.user-page-services > .wrap .edit-form {background: #ECFF26; margin: 0 -60px -60px; }
+.user-page-services > .wrap .edit-form {background: #ECFF26; margin: -60px; }
 .user-page-services > .wrap .edit-form > .wrap {width: 50%; padding: 60px; }
 .user-page-services > .wrap .edit-form > .buttons {padding: 0 60px 60px}
 
@@ -453,7 +453,7 @@ label.right > input[type="radio"]+span:before {content: none}
 
 
 
-.select-style { vertical-align: middle; display: inline-block; padding: 10px 0; margin: 0; border: 1px solid #ccc; width: 300px; border-radius: 3px; overflow: hidden; position: relative; background-color: #fff;}
+.select-style { vertical-align: middle; display: inline-block; padding: 10px 0; margin: 0; border: 1px solid #ccc; min-width: 300px; border-radius: 3px; overflow: hidden; position: relative; background-color: #fff;}
 .select-style:after { position: absolute; content: ""; height: 15px; width: 20px; right: 10px; top: 50%; margin-top: -7px; background: #fff url("arrowdown.gif") no-repeat 50%; }
 .select-style select { padding: 5px 8px; font-size: 1.6em; width: 130%; border: none; box-shadow: none; background: transparent; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .select-style select:focus { outline: none; }
