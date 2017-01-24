@@ -208,11 +208,11 @@ h5 {font-size: 1.4em; font-weight: 800}
 .user-page-info { background: #fff; display: table; width: 100%; }
 .user-page-info + .user-page-services { margin-top: 60px }
 .user-page-info .registration-data {display: table-cell; width: 50%; padding: 60px; }
+.user-page-info .registration-data > div {margin-bottom: 30px; float: left; width: 50%;}
+.user-page-info .registration-data .stop {width: 100%; float: none; clear: both; padding-top: 30px; margin-bottom: 0}
 .user-page-info .registration-data .avatar { background-color: #fff; display: block; height: 100px; width: 100px; border-radius: 50px; border: 1px solid rgba(0,0,0,.3); overflow: hidden; background-size: cover; margin-bottom: 50px }
-.user-page-info .registration-data .price,
-.user-page-info .registration-data .club,
-.user-page-info .registration-data .phone {float: left; width: 50%; margin-bottom: 30px}
-.user-page-info .registration-data .email {clear: both; margin-bottom: 30px; }
+.user-page-info .registration-data .club {clear: both;}
+.user-page-info .registration-data .email {clear: both; width: 100%}
 .user-page-info .registration-data h4 { color: #d6d6d9; margin-bottom: .5em;}
 .user-page-info .registration-data .value { font-size: 1.8em }
 .user-page-info .registration-data .price .value {font-size: 3em}
