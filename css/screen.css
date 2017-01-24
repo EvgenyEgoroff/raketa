@@ -470,6 +470,37 @@ label.right > input[type="radio"]+span:before {content: none}
 
 
 
+/* Логин */
+/* ---------------------------------------------------------------------------- */
+
+body.login {}
+body.login .main,
+body.login .l-footer,
+body.login .l-header .aside,
+body.login .l-header .topmenu {display: none}
+
+
+.login-form {display: none}
+body.login .login-form {display: inline-block}
+body.login .login-form input {margin-right: 5px; width: 200px}
+
+body.login .l-header {top: 50%; min-height: 100px; height: auto; margin-top: -50px; text-align: center;}
+body.login .l-header .logo {float: none; display: inline-block; vertical-align: middle;}
+body.login .l-nav {padding: 20px 0}
+
+
+
+
+
+
+
+
+
+/* Малые размеры экрана */
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+
 @media screen and (max-width: 1380px) {
 	.sticky-head { margin: 0 50px; padding: 0px 20px; }
 }
@@ -616,6 +647,11 @@ label.right > input[type="radio"]+span:before {content: none}
 	.service-list > .wrap > .service {display: block; border-bottom: 1px solid #ccc; padding: 20px}
 	.service-list > .wrap > .service > div:first-child {font-weight: 800; }
 	.service-list > .wrap > .service > div {display: block; border: 0; padding: .3em 2em }
+
+
+	body.login .login-form {display: block;}
+	body.login .login-form input {display: block; margin: 0 auto 5px}
+	body.login .login-form button {width: 200px}
 }
 
 @media screen and (max-width: 500px) {

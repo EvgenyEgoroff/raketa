@@ -18,7 +18,7 @@
 
 
 </head>
-<body>
+<body class="login">
 
 <header class="l-header">
 	<nav class="l-nav">
@@ -58,6 +58,9 @@
 			</li>
 			<li class="phone"><a href="tel:+74957772223">+7 (495) 777-22-23</a></li>
 		</ul>
+		<form class="login-form">
+			<input type="text" placeholder="Имя пользователя" /><input type="password" placeholder="Пароль" /><button onclick="document.body.classList.remove('login'); return false;">Войти</button>
+		</form>
 	</nav>
 </header>
 
@@ -121,7 +124,7 @@
 				</div>
 			</section>
 			<button class="logout">Выйти из кабинета</button>
-			
+
 			<section class="user-page-services">
 				<h2>Услуги</h2>
 				<div class="wrap">
