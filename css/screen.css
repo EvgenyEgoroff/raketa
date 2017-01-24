@@ -97,8 +97,8 @@ h5 {font-size: 1.4em; font-weight: 800}
 .l-footer .logo .svg { width: 250px; display: block; margin: 0 auto; }
 .l-footer .logo .svg * { fill: rgba(255,255,255,0.3); }
 
-.main { max-width: 1380px; margin:0 auto; padding: 120px 50px 100px; margin-bottom: -380px}
-.main:after {height: 380px; content: ""; display: block; }
+.main { max-width: 1380px; margin:0 auto; padding: 120px 50px 100px; margin-bottom: -380px; min-height: 100%; }
+.main:after {height: 420px; content: ""; display: block; }
 .main section > header {padding: 0px 0 30px;}
 .main section > header:after { content: ""; display: table; clear: both; }
 .main section > header > .select-style {float: right}
