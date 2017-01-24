@@ -1,1 +1,41 @@
-@font-face{font-family:Gilroy;font-weight:400;src:url(../fonts/GilroyRegular.otf) format("opentype")}@font-face{font-family:Gilroy;font-weight:500;src:url(../fonts/GilroyMedium.otf) format("opentype")}@font-face{font-family:Gilroy;font-weight:600;src:url(../fonts/GilroySemiBold.otf) format("opentype")}@font-face{font-family:Gilroy;font-weight:700;src:url(../fonts/GilroyBold.otf) format("opentype")}@font-face{font-family:Gilroy;font-weight:800;src:url(../fonts/GilroyExtraBold.otf) format("opentype")}@font-face{font-family:Shentox;font-weight:400;src:url(../fonts/ShentoxRegular.otf) format("opentype")}@font-face{font-family:Shentox;font-weight:700;src:url(../fonts/ShentoxBold.otf) format("opentype")}
+@font-face {
+	font-family: Gilroy;
+	font-weight: 400;
+	src: url("../fonts/GilroyRegular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Gilroy;
+	font-weight: 500;
+	src: url("../fonts/GilroyMedium.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Gilroy;
+	font-weight: 600;
+	src: url("../fonts/GilroySemiBold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Gilroy;
+	font-weight: 700;
+	src: url("../fonts/GilroyBold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Gilroy;
+	font-weight: 800;
+	src: url("../fonts/GilroyExtraBold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Shentox;
+	font-weight: 400;
+	src: url("../fonts/ShentoxRegular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: Shentox;
+	font-weight: 700;
+	src: url("../fonts/ShentoxBold.otf") format("opentype");
+}
