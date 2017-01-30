@@ -515,8 +515,8 @@ body.login .l-nav {padding: 20px 0}
 	.main {padding: 80px 30px 70px}
 	.topmenu a {margin: 0 14px}
 
-	.schedule > .wrap > table th {width: 100px; }
-	.schedule > .wrap > table td:nth-child(2) {width: 20px}
+	.schedule > .wrap table th {width: 100px; }
+	.schedule > .wrap table td:nth-child(2) {width: 20px}
 	.sticky-head { padding: 0; }
 	.schedule>.wrap .popup {top: 92px; left: 153px; }
 
@@ -546,8 +546,8 @@ body.login .l-nav {padding: 20px 0}
 	.notification.training .datetime {right: 40px;}
 	
 	.schedule>.wrap .popup>.wrap {padding: 40px 20px 40px 20px}
-	.schedule > .wrap > table thead .caption-full {display: none}
-	.schedule > .wrap > table thead .caption-short {display: block;}
+	.schedule > .wrap table thead .caption-full {display: none}
+	.schedule > .wrap table thead .caption-short {display: block;}
 
 	.tabs .extra {display: none}
 
@@ -601,8 +601,8 @@ body.login .l-nav {padding: 20px 0}
 	.schedule>.wrap .popup>.wrap {padding: 20px 0px 20px 10px}
 	.sticky-head {margin: 0 30px;}
 
-	.schedule > .wrap > table th {width: 50px; }
-	.schedule > .wrap > table td:nth-child(2) {width: 10px}
+	.schedule > .wrap table th {width: 50px; }
+	.schedule > .wrap table td:nth-child(2) {width: 10px}
 
 	.user-list > header > .select-style,
 	.schedule > header > .select-style {float: left!important; margin-right: 20px; margin-bottom: 10px}
@@ -683,7 +683,9 @@ body.login .l-nav {padding: 20px 0}
 
 	.user-list > .wrap {padding: 0; }
 	.user-list .wrap ul li {margin-bottom: 10px; }
-
+	.user-list .user .avatar,
+	.user-list.selectable .user .avatar:before {height: 60px; width: 60px}
+	.user-list .user .name {margin-left: 75px; margin-top: 15px}
 }
 
 
