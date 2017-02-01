@@ -496,7 +496,7 @@ body.login .login-form input:first-child {border-bottom: 0}
 body.login .login-form button {font-size: 20px; background: #ECFF26; border-color: #ECFF26; color: #000; margin-top: 30px}
 body.login .login-form .remember-pwd {display: block; color: #fff; margin-top: 30px; font-size: 20px}
 
-body.login .l-header {background:#FB2D46 url(login.png) 0 100% no-repeat; background-size: auto 80%; display: flex; align-items: center; justify-content: center; height: 100%; text-align: center;}
+body.login .l-header {background:#FB2D46; display: flex; align-items: center; justify-content: center; height: 100%; text-align: center;}
 body.login .l-header .logo {position: absolute; left: 50%; top: 60px; margin-left: -102px}
 body.login .l-header .logo svg {height: 45px; width: 205px}
 body.login .l-header .logo svg * {fill: #fff}
@@ -663,7 +663,6 @@ body.login .l-nav {padding: 20px 0}
 	.service-list > .wrap > .service > div {display: block; border: 0; padding: .3em 2em }
 
 
-	body.login .l-header {background-image: none}
 	body.login .login-form {display: block;}
 	body.login .login-form input {display: block; margin: 0 auto 5px}
 	body.login .login-form button {width: 200px}
