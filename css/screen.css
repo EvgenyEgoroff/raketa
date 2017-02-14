@@ -1,3 +1,8 @@
+/* red — fb2d46 */
+/* yellow - ECFF26 */
+/* cyan - 41F0D3 */
+
+
 section, header, footer {
 	display: block;
 }
@@ -172,11 +177,6 @@ h5 {font-size: 1.4em; font-weight: 800}
 .schedule > .wrap table tbody td.disabled,
 .schedule > .wrap table tbody td.disabled:hover { background: #F3F3F3; cursor: default; }
 
-/*  */
-
-/* red — fb2d46 */
-/* yellow - ECFF26 */
-/* cyan - 41F0D3 */
 
 
 .schedule > .wrap table tbody td,
@@ -475,6 +475,15 @@ label.right > input[type="radio"]+span:before {content: none}
 /* Логин */
 /* ---------------------------------------------------------------------------- */
 
+
+.border-form {display: inline-block; margin-top: 150px}
+.border-form input {font-size: 20px; background: transparent; color: #fff; border: 8px solid #ECFF26; border-radius: 0; display:block;}
+.border-form button {font-size: 20px; background: #ECFF26; border-color: #ECFF26; color: #000; margin-top: 30px}
+.border-form a {display: block; color: #fff; cursor: pointer; font-size: 20px}
+.border-form .message {font-size: 20px; background: #ffffff; padding: 30px; display: block; color: #fb2d46}
+
+
+
 body.login {}
 body.login .main,
 body.login .l-footer,
@@ -482,19 +491,22 @@ body.login .l-header .aside,
 body.login .l-header .topmenu {display: none}
 
 
-body.login input[placeholder] {color: #FD96A2}
-body.login input::-webkit-input-placeholder {color: #FD96A2}
-body.login input::-moz-placeholder {color: #FD96A2}
-body.login input:-moz-placeholder {color: #FD96A2}
-body.login input:-ms-input-placeholder {color: #FD96A2}
+body.login .border-form .message,
+body.login .border-form input {width: 350px}
+body.login .border-form input[placeholder] {color: #FD96A2}
+body.login .border-form input::-webkit-input-placeholder {color: #FD96A2}
+body.login .border-form input::-moz-placeholder {color: #FD96A2}
+body.login .border-form input:-moz-placeholder {color: #FD96A2}
+body.login .border-form input:-ms-input-placeholder {color: #FD96A2}
 
 
 .login-form {display: none}
-body.login .login-form {display: inline-block; margin-top: 150px}
-body.login .login-form input {font-size: 20px; background: transparent; color: #fff; border: 8px solid #ECFF26; border-radius: 0; display:block; width: 350px}
-body.login .login-form input:first-child {border-bottom: 0}
-body.login .login-form button {font-size: 20px; background: #ECFF26; border-color: #ECFF26; color: #000; margin-top: 30px}
-body.login .login-form .remember-pwd {display: block; color: #fff; margin-top: 30px; font-size: 20px}
+
+body.login .login-form {display: block;}
+body.login .login-form input:first-child {margin-bottom:-8px}
+body.login .login-form button {width: 200px}
+body.login .remember-pwd,
+body.login .back-to-auth {margin-top: 30px; }
 
 body.login .l-header {background:#FB2D46; display: flex; align-items: center; justify-content: center; height: 100%; text-align: center;}
 body.login .l-header .logo {position: absolute; left: 50%; top: 60px; margin-left: -102px}
@@ -661,14 +673,12 @@ body.login .l-nav {padding: 20px 0}
 	.service-list > .wrap > .service {display: block; border-bottom: 1px solid #ccc; padding: 20px}
 	.service-list > .wrap > .service > div:first-child {font-weight: 800; }
 	.service-list > .wrap > .service > div {display: block; border: 0; padding: .3em 2em }
-
-
-	body.login .login-form {display: block;}
-	body.login .login-form input {display: block; margin: 0 auto 5px}
-	body.login .login-form button {width: 200px}
 }
 
 @media screen and (max-width: 500px) {
+
+	body.login .border-form input {width: 300px}
+
 	.main {padding: 80px 10px 30px}
 
 	.sticky-head {margin: 0 20px}
