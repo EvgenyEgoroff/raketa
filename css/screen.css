@@ -16,7 +16,7 @@ html, body {
 	width: 100%;
 }
 
-body { font: 62.5%/1.3 'Gilroy', serif, sans-serif; cursor: default; overflow-x: hidden; font-weight: 600; min-height: 100%;}
+body { font: 62.5%/1.3 'Gilroy', sans-serif; cursor: default; overflow-x: hidden; font-weight: 600; min-height: 100%;}
 
 * { -webkit-text-size-adjust: none; box-sizing: border-box; }
 
@@ -356,13 +356,13 @@ h5 {font-size: 1.4em; font-weight: 800}
 .notification.client .avatar {position: absolute; left: 60px; top: 50%; margin-top: -50px; background-color: #fff; height: 100px; width: 100px; background-size: cover; border-radius: 50px;}
 .notification.client button {position: absolute; right: 60px; top: 50%; margin-top: -1.7em; }
 .notification.client .name {font-size: 1.8em; font-weight: 600}
-.notification.client .phone {font-family: Shentox; font-size: 4em; font-weight: 400}
+.notification.client .phone {font-size: 4em; font-weight: 400; font-weight: 800}
 
 .notification.training {}
 .notification.training .avatar {position: absolute; left: 60px; top: 50%; margin-top: -50px; background-color: #fff; height: 100px; width: 100px; background-size: cover; border-radius: 50px;}
 .notification.training .name {margin: 0 280px; font-size: 1.6em}
 .notification.training .datetime {position: absolute; right: 60px; top: 50%; margin-top: -3em; }
-.notification.training .datetime .date {font-family: Shentox; font-size: 4em; font-weight: 400}
+.notification.training .datetime .date {font-size: 1.6rem; font-weight: 800}
 .notification.training .datetime .day {display: block; font-weight: 600; font-size: 1.6em }
 
 
@@ -476,11 +476,16 @@ label.right > input[type="radio"]+span:before {content: none}
 /* ---------------------------------------------------------------------------- */
 
 
-.border-form {display: inline-block; margin-top: 150px}
+.border-form {display: inline-block; margin-top: 100px}
 .border-form input {font-size: 20px; background: transparent; color: #fff; border: 8px solid #ECFF26; border-radius: 0; display:block;}
 .border-form button {font-size: 20px; background: #ECFF26; border-color: #ECFF26; color: #000; margin-top: 30px}
-.border-form a {display: block; color: #fff; cursor: pointer; font-size: 20px}
+.border-form a {display: table; color: #fff; cursor: pointer; font-size: 20px; border-bottom: 3px solid rgba(255,255,255,.3); margin-left: auto; margin-right: auto;}
+.border-form label span {font-size: 30px; display: block; margin-bottom: 10px; }
 .border-form .message {font-size: 20px; background: #ffffff; padding: 30px; display: block; color: #fb2d46}
+
+.border-form .digit {width: 80px!important; font-family: 'RaketaNumbers'!important; font-size: 3rem!important; line-height: 5rem; height: 5rem; display: inline-block!important; text-align: center;}
+.border-form .input-group input + input {margin-left: -8px;}
+
 
 
 
@@ -491,9 +496,11 @@ body.login .l-header .aside,
 body.login .l-header .topmenu {display: none}
 
 
+body.login .border-form .message {margin: 0 auto}
+body.login .border-form label + .message {margin-top: 30px; }
 body.login .border-form .message,
 body.login .border-form input {width: 350px}
-body.login .border-form input[placeholder] {color: #FD96A2}
+body.login .border-form input::placeholder {color: #FD96A2}
 body.login .border-form input::-webkit-input-placeholder {color: #FD96A2}
 body.login .border-form input::-moz-placeholder {color: #FD96A2}
 body.login .border-form input:-moz-placeholder {color: #FD96A2}

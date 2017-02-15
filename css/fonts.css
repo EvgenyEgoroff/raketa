@@ -1,3 +1,4 @@
+/*
 @font-face {
 	font-family: Gilroy;
 	font-weight: 400;
@@ -9,19 +10,19 @@
 	font-weight: 500;
 	src: url("../fonts/GilroyMedium.otf") format("opentype");
 }
-
+*/
 @font-face {
 	font-family: Gilroy;
 	font-weight: 600;
 	src: url("../fonts/GilroySemiBold.otf") format("opentype");
 }
-
+/*
 @font-face {
 	font-family: Gilroy;
 	font-weight: 700;
 	src: url("../fonts/GilroyBold.otf") format("opentype");
 }
-
+*/
 @font-face {
 	font-family: Gilroy;
 	font-weight: 800;
@@ -29,13 +30,11 @@
 }
 
 @font-face {
-	font-family: Shentox;
-	font-weight: 400;
-	src: url("../fonts/ShentoxRegular.otf") format("opentype");
-}
-
-@font-face {
-	font-family: Shentox;
-	font-weight: 700;
-	src: url("../fonts/ShentoxBold.otf") format("opentype");
+	font-family: 'RaketaNumbers';
+	src: url('../fonts/RaketaNumbers.eot');
+	src: url('../fonts/RaketaNumbers.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/RaketaNumbers.woff') format('woff'),
+		url('../fonts/RaketaNumbers.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }

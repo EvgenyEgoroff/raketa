@@ -27,13 +27,24 @@
 			</a>
 		</div>
 
+<style type="text/css">
+</style>
+
 		<form class="confirm-form border-form">
-			<input type="text" placeholder="Код из СМС" />
-			<button>Сбросить пароль</button>
+			<label>
+				<span>Введите код из SMS</span>
+				<input type="text" class="separate-input" maxlength="6" placeholder="Код из СМС" />
+			</label>
+			<span class="confirm-message message" style="display: none">
+				Вы ввели верный / неверный код. Попробуйте еще раз.
+			</span>
+			<button onclick="document.querySelector('.confirm-message').style.display = 'block'; return false;">Сбросить пароль</button>
 			<a class="back-to-auth" href="./">Вернуться к авторизации</a>
 		</form>
 	</nav>
 </header>
+
+<script type="text/javascript" src="js/separate-input.js"></script>
 
 </body>
 </html>

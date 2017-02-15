@@ -11,5 +11,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 nav ul{list-style:none;}
 html, body{height:100%;}
 body{line-height:1;text-align:left;}
-input, select, button, textarea{font-family:Tahoma,Verdana,Arial,sans-serif;}
+input, select, button, textarea{font-family:'Gilroy',Tahoma,Verdana,Arial,sans-serif;}
 label, input[type="button"], input[type="submit"], button{cursor:pointer;}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
